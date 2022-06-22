@@ -6,25 +6,25 @@ import React,{useState} from "react";
 
 //create your first component
 const Home = () => {
-	const [color1,setColor1]=useState("btn-dark");
-	const [color2,setColor2]=useState("btn-dark");
-	const [color3,setColor3]=useState("btn-dark");
+	const [color1,setColor1]=useState("btn-danger");
+	const [color2,setColor2]=useState("btn-warning");
+	const [color3,setColor3]=useState("btn-success");
 
 	
 	
 
 	function cambiarColor() {
-		color1==="btn-dark" ? setColor1("btn-danger") : setColor1("btn-dark")
+		color1==="btn-danger" ? setColor1("btn-danger") : setColor1("btn-dark")
 	
 	};
 	
 	function cambiarColor2() {
-		color2==="btn-dark" ? setColor2("btn-warning") : setColor2("btn-dark")
+		color2==="btn-warning" ? setColor2("btn-warning") : setColor2("btn-dark")
 	
 	};
 	
 	function cambiarColor3() {
-		color3==="btn-dark" ?setColor3("btn-success") : setColor3("btn-dark")
+		color3==="btn-success" ?setColor3("btn-success") : setColor3("btn-dark")
 	
 	};
 	
@@ -32,15 +32,15 @@ const Home = () => {
 	
 	return (
 		<div className="container">
-			<a href="#" className={"light1 btn "+ color1} onClick={cambiarColor}>
+			<button href="#" className={"light1 btn "+ color1} onClick={cambiarColor}>
 				
-			</a>
-			<a href="#" className={"light2 btn "+ color2} onClick={cambiarColor2}>
+			</button>
+			<button href="#" className={"light2 btn "+ color2} onClick={cambiarColor2}>
 				
-			</a>
-			<a href="#" className={"light3 btn "+ color3} onClick={cambiarColor3}>
+			</button>
+			<button href="#" className={"light3 btn "+ color3} onClick={cambiarColor3}>
 				
-			</a>
+			</button>
 		
 		</div>
 	);
